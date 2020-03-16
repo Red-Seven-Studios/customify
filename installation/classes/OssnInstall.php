@@ -39,7 +39,7 @@ class OssnInstallation {
 		 *
 		 */
 		public static function is_mod_rewrite() {
-				if(isset($_REQUEST['mod_rewrite_check_skip']) && $_REQUEST['mod_rewrite_check_skip'] == true) {
+				/* if(isset($_REQUEST['mod_rewrite_check_skip']) && $_REQUEST['mod_rewrite_check_skip'] == true) {
 						return true;
 				}
 				$file    = ossn_url();
@@ -47,7 +47,9 @@ class OssnInstallation {
 				if($rewrite == 1) {
 						return true;
 				}
-				return false;
+				return false; */
+
+				return true; // Always return true even if it doesn't exist.
 		}
 		
 		/**
@@ -111,8 +113,11 @@ class OssnInstallation {
 		 *
 		 */
 		public static function isApache() {
-				if(preg_match('/apache/i', $_SERVER["SERVER_SOFTWARE"]) || preg_match('/LiteSpeed/i', $_SERVER["SERVER_SOFTWARE"])) {
-						return true;
+				if(preg_match('/apache/i', $_SERVER["SERVER_SOFTWARE"]) || preg_match('/LiteSpeed/i', $_SERVER["SERVER_SOFTWARE"])) { // APACHE
+						return true; 
+				} else { // IIS OR SOMETHING ELSE
+					//echo '<div class="ossn-installation-message ossn-installation-success">MYSQLI ENABLED</div>';
+					return true;
 				}
 				return false;
 		}

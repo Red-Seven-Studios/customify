@@ -17,7 +17,7 @@ $englsih = array(
 	'ossn:check' => 'Validate',
 	'ossn:installed' => 'Installed',
 	'ossn:installed:message' => 'Open Source Social Network has been installed.',
-    'ossn:prerequisites' => 'Installation prerequisites',
+    'ossn:prerequisites' => "Installation prerequisites (The only ones you don't need are: MOD_REWRITE and APACHE)",
     'ossn:settings' => 'Server Settings',
     'ossn:dbsettings' => 'Database',
 	'ossn:dbuser' => 'Database User',
@@ -45,11 +45,11 @@ $englsih = array(
 	'ossn:install:mysqli' => 'MYSQLI ENABLED',
 	'ossn:install:mysqli:required' => 'MYSQLI PHP EXTENSION REQUIRED',
 	
-	'ossn:install:apache' => 'APACHE ENABLED',
-	'ossn:install:apache:required' => 'APACHE IS REQUIRED',
+	'ossn:install:apache' => 'APACHE/IIS ENABLED',
+	'ossn:install:apache:required' => 'APACHE/IIS IS REQUIRED',
 	
-	'ossn:install:modrewrite' => 'MOD_REWRITE',
-	'ossn:install:modrewrite:required' => 'MOD_REWRITE REQUIRED',
+	'ossn:install:modrewrite' => 'MOD_REWRITE (NOT REQUIRED)',
+	'ossn:install:modrewrite:required' => 'MOD_REWRITE (NOT REQUIRED)',
 	
 	'ossn:install:curl' => 'PHP CURL',
 	'ossn:install:curl:required' => 'PHP CURL REQUIRED',
